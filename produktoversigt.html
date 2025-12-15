@@ -1,75 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <meta name="robots" content="noindex" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amazon – Gaming Mouses (Mock)</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div></div>
-      <nav class="main-nav">
-        <a href=""> </a>
-        <ul class="menu">
-          <li>Menu</li>
-          <li>Menu</li>
-          <li>Menu</li>
-          <li>Menu</li>
-          <li>Menu</li>
-        </ul>
-        <div class="nav-action">
-          <button></button>
-        </div>
+    <header class="topbar">
+      <div class="topbar__left">
+        <a class="brand" href="#" aria-label="Amazon">
+          <span class="brand__text">AMAZON</span>
+        </a>
+      </div>
+
+      <nav class="topnav" aria-label="Hovedmenu">
+        <a href="#" class="topnav__link">Menu</a>
+        <a href="#" class="topnav__link">Menu</a>
+        <a href="#" class="topnav__link">Menu</a>
+        <a href="#" class="topnav__link">Menu</a>
+        <a href="#" class="topnav__link">Menu</a>
+        <a href="#" class="topnav__link">Menu</a>
       </nav>
+
+      <div class="topbar__right">
+        <div class="topbar__mini">
+          <a href="#" class="mini-link">EAN Kunde</a>
+          <a href="#" class="mini-link">B2B-Kunde</a>
+        </div>
+
+        <div class="actions">
+          <a class="action" href="#">Sign in</a>
+          <button class="icon-btn" aria-label="Søg">
+            <span class="icon">⌕</span>
+          </button>
+          <button class="icon-btn" aria-label="Kurv">
+            <span class="icon">🛒</span>
+          </button>
+
+          <button class="burger" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+        </div>
+      </div>
     </header>
-    <main>
-      <aside class="filters">
-        <section class="filter-group">
-          <h3></h3>
-          <p></p>
-        </section>
-        <section class="filter-group">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
-        <section class="filter-group">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
-      </aside>
-      <section class="product">
-        <div class="list-header">
-          <h1></h1>
-          <p></p>
+
+    <aside class="drawer" id="mobileMenu" aria-hidden="true">
+      <div class="drawer__header">
+        <strong>Menu</strong>
+        <button class="drawer__close" type="button" aria-label="Luk menu">✕</button>
+      </div>
+
+      <nav class="drawer__nav" aria-label="Mobilmenu">
+        <a href="#">Menu</a>
+        <a href="#">Menu</a>
+        <a href="#">Menu</a>
+        <a href="#">Menu</a>
+        <a href="#">Menu</a>
+        <a href="#">Menu</a>
+        <hr />
+        <a href="#">Sign in</a>
+        <a href="#">EAN Kunde</a>
+        <a href="#">B2B-Kunde</a>
+      </nav>
+    </aside>
+
+    <div class="backdrop" hidden></div>
+
+    <main class="page">
+      <div class="page__head">
+        <div class="fake-search" aria-hidden="true">
+          <span class="fake-search__bar"></span>
+          <span class="fake-search__chip"></span>
         </div>
-        <div class="product-grid-1fr-2fr">
-          <article>
-            <a href=""></a>
-            <h3></h3>
-            <p></p>
-          </article>
-          <article>
-            <a href=""></a>
-            <h3></h3>
-            <p></p>
-          </article>
-          <article>
-            <a href=""></a>
-            <h3></h3>
-            <p></p>
-          </article>
+
+        <div class="sort">
+          <label for="sort" class="sort__label">Sort by:</label>
+          <select id="sort" class="sort__select">
+            <option>Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest</option>
+          </select>
         </div>
-      </section>
+      </div>
+
+      <div class="layout">
+        <aside class="filters" aria-label="Filtre">
+          <section class="filter-block">
+            <h3>PRICE</h3>
+            <p class="price-range">$0 - $500</p>
+
+            <div class="range-ui" aria-hidden="true">
+              <span class="dot"></span>
+              <span class="track"></span>
+              <span class="dot"></span>
+            </div>
+
+            <ul class="filter-list">
+              <li><a href="#">Up to $10</a></li>
+              <li><a href="#">Up to $30</a></li>
+              <li><a href="#">Up to $50</a></li>
+              <li><a href="#">Up to $70</a></li>
+              <li><a href="#">Up to $100</a></li>
+              <li><a href="#">Up to $150</a></li>
+              <li><a href="#">$150 & above</a></li>
+            </ul>
+          </section>
+
+          <section class="filter-block">
+            <h3>BRAND</h3>
+            <ul class="checklist">
+              <li>
+                <label><input type="checkbox" /> Logitech</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Razer</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Corsair</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> SteelSeries</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> ZOWIE by BenQ</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Glorious</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> ASUS</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> HyperX</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Mad Catz</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> MSI</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> G-Wolves</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Pulsar Gaming Gears</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Cooler Master</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Turtle Beach</label>
+              </li>
+            </ul>
+            <a class="more" href="#">More…</a>
+          </section>
+
+          <section class="filter-block">
+            <h3>Condition</h3>
+            <ul class="checklist">
+              <li>
+                <label><input type="checkbox" /> New</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Renewed</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Used</label>
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="content" aria-label="Produkter">
+          <header class="content__header">
+            <h1>GAMING MOUSES</h1>
+          </header>
+
+          <div class="products">
+            <div class="products__left">
+              <article class="card">
+                <img src="https://images.unsplash.com/photo-1616296425622-4560a2ad83de?auto=format&fit=crop&w=900&q=70" alt="Gaming mus produkt" />
+              </article>
+
+              <article class="card">
+                <img src="https://images.unsplash.com/photo-1624806128284-3b9d3f0d8f54?auto=format&fit=crop&w=900&q=70" alt="Gaming mus produkt" />
+              </article>
+            </div>
+
+            <article class="hero-card">
+              <img src="https://images.unsplash.com/photo-1584270354949-1f4a24b06535?auto=format&fit=crop&w=1400&q=75" alt="Stor gaming mus" />
+
+              <div class="hero-dots" aria-hidden="true">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer></footer>
+
+    <script src="burger.js" defer></script>
   </body>
 </html>
