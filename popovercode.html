@@ -1,41 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <meta name="robots" content="noindex" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amazon – Gaming Mouse (Mock)</title>
+    <link rel="stylesheet" href="css/layout.css" />
   </head>
   <body>
-    <header>
-      <div></div>
-      <nav class="main-nav">
-        <a href=""> </a>
-        <ul class="menu">
-          <li>Produkter</li>
-          <li>Menu</li>
-          <li>Menu</li>
-          <li>Menu</li>
-          <li>Menu</li>
-        </ul>
-        <div class="nav-action">
-          <button></button>
-        </div>
+    <div class="topstrip">
+      <p>Der kunne være stjerner fra trustpilot her evt</p>
+    </div>
+
+    <header class="header">
+      <a class="logo" href="index.html">AMAZON</a>
+
+      <nav class="topnav" aria-label="Hovedmenu">
+        <a href="#" class="topnav__link">Dagens tilbud</a>
+        <a href="#" class="topnav__link">Mode</a>
+        <a href="#" class="topnav__link">Bøger</a>
+        <a href="#" class="topnav__link">Prime</a>
+        <a href="#" class="topnav__link">Gavekort</a>
+        <a href="#" class="topnav__link">Elektronik</a>
       </nav>
+
+      <div class="header-right">
+        <div class="mini-links">
+          <a href="#">EAN Kunde</a>
+          <a href="#">B2B-Kunde</a>
+        </div>
+
+        <div class="icons">
+          <a class="signin" href="#">Sign in</a>
+          <button class="iconbtn" aria-label="Søg">⌕</button>
+          <a class="iconbtn" href="kurv.html">🛒</a>
+        </div>
+      </div>
     </header>
-    <main>
-      <section>
-        <h1></h1>
-        <div class="badges"></div>
-        <section></section>
-        <ul></ul>
-        <p></p>
-        <button class="add-to-cart"></button>
-      </section>
-      <div class="product-image">
-        <img src="" alt="" />
+
+    <div class="subrow">
+      <p class="results">1-48 of over 100,000 results for <span>"gaming"</span></p>
+
+      <div class="searchwrap" aria-hidden="true">
+        <div class="searchbar"></div>
+        <div class="searchbtn">⌕</div>
+      </div>
+
+      <div class="sort">
+        <span>Sort by:</span>
+        <select>
+          <option>Featured</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <main class="page">
+      <div class="layout">
+        <aside class="sidebar">
+          <section class="block">
+            <h3>PRICE</h3>
+            <p class="price">$0 - $100</p>
+
+            <div class="range" aria-hidden="true">
+              <span class="dot"></span>
+              <span class="line"></span>
+              <span class="dot"></span>
+            </div>
+
+            <ul class="linklist">
+              <li><a href="#">Up to $10</a></li>
+              <li><a href="#">Up to $30</a></li>
+              <li><a href="#">Up to $50</a></li>
+              <li><a href="#">Up to $70</a></li>
+              <li><a href="#">Up to $100</a></li>
+              <li><a href="#">Up to $150</a></li>
+              <li><a href="#">$150 & above</a></li>
+            </ul>
+          </section>
+
+          <section class="block">
+            <h3>BRAND</h3>
+            <ul class="checks">
+              <li>
+                <label><input type="checkbox" /> Logitech</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Razer</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Corsair</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> SteelSeries</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> ZOWIE by BenQ</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Glorious</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> ASUS</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> HyperX</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Mad Catz</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> MSI</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> G-Wolves</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Pulsar Gaming Gears</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Cooler Master</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Turtle Beach</label>
+              </li>
+            </ul>
+            <a class="more" href="#">More…</a>
+          </section>
+
+          <section class="block">
+            <h3>Condition</h3>
+            <ul class="checks">
+              <li>
+                <label><input type="checkbox" /> New</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Renewed</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Used</label>
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="content">
+          <div class="product">
+            <div class="info">
+              <h1 class="title">
+                GAMING MOUSES<br />
+                <span>Logitech G502 X</span>
+              </h1>
+
+              <div class="rows">
+                <div class="row">
+                  <p class="label">Style: <strong>Wireless</strong></p>
+                  <div class="chips">
+                    <button class="chip is-active" type="button">Wireless</button>
+                    <button class="chip" type="button">Wired</button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <p class="label">Pattern Name: <strong>Non-RGB</strong></p>
+                  <div class="chips">
+                    <button class="chip" type="button">RGB</button>
+                    <button class="chip is-active" type="button">Non-RGB</button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <p class="label">Configuration: <strong>Mouse</strong></p>
+                  <div class="chips">
+                    <button class="chip is-active" type="button">Mouse</button>
+                    <button class="chip" type="button">Mouse + Headset</button>
+                    <button class="chip" type="button">Mouse + Keyboard</button>
+                    <button class="chip" type="button">Mouse + Mousepad</button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <p class="label">Color: <strong>Black</strong></p>
+                  <div class="swatches">
+                    <button class="swatch is-active" type="button" aria-label="Black">
+                      <span class="thumb thumb--dark"></span>
+                    </button>
+                    <button class="swatch" type="button" aria-label="White">
+                      <span class="thumb thumb--light"></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="specs">
+                  <p><strong>Brand:</strong> Logitech</p>
+                  <p><strong>Color:</strong> Black</p>
+                  <p><strong>Connectivity Technology:</strong> USB, Wireless</p>
+                  <p><strong>Special:</strong> Ergonomic Design, Lightweight</p>
+                  <p><strong>Feature:</strong> Wireless</p>
+                  <p><strong>Movement:</strong> Optical</p>
+                </div>
+
+                <div class="cta">
+                  <div class="pricebox">$100</div>
+                  <button class="add" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero">
+              <div class="imagebox">
+                <img src="Billeder/Gamingmus.png" alt="Gaming mouse produkt" />
+              </div>
+
+              <div class="pager" aria-hidden="true">
+                <span class="p"></span>
+                <span class="p"></span>
+                <span class="p"></span>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-    <footer></footer>
+    <script src="burger.js" defer></script>
   </body>
 </html>

@@ -1,92 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <meta name="robots" content="noindex" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amazon – Forside (Mock)</title>
+    <link rel="stylesheet" href="css/layout.css" />
   </head>
+
   <body>
-    <header>
-      <div></div>
-      <nav class="main-nav">
-        <a href=""> </a>
-        <ul class="menu">
-          <li>Menu</li>
-          <li>Menu</li>
-          <li>Menu</li>
-          <li>Menu</li>
-          <li>Menu</li>
-        </ul>
-        <div class="nav-action">
-          <button></button>
-        </div>
+    <div class="topstrip">
+      <p>Der kunne være stjerner fra trustpilot her evt</p>
+    </div>
+
+    <header class="header">
+      <a class="logo" href="index.html">AMAZON</a>
+
+      <nav class="topnav" aria-label="Hovedmenu">
+        <a href="#" class="topnav__link">Dagens tilbud</a>
+        <a href="#" class="topnav__link">Mode</a>
+        <a href="#" class="topnav__link">Bøger</a>
+        <a href="#" class="topnav__link">Prime</a>
+        <a href="#" class="topnav__link">Gavekort</a>
+        <a href="#" class="topnav__link">Elektronik</a>
       </nav>
+
+      <div class="header-right">
+        <div class="mini-links">
+          <a href="#">EAN Kunde</a>
+          <a href="#">B2B-Kunde</a>
+        </div>
+
+        <div class="icons">
+          <a class="signin" href="#">Sign in</a>
+          <button class="iconbtn" aria-label="Søg">⌕</button>
+          <button class="iconbtn" aria-label="Kurv">🛒</button>
+        </div>
+      </div>
     </header>
-    <main>
-      <section>
-        <div class="hero-content">
-          <h1>ALT FRA A TIL Z</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
-            dolore ad, quam rem veritatis eaque.
-          </p>
-          <button></button>
+
+    <main class="container">
+      <section class="hero" aria-label="Hero slider">
+        <div class="hero-slider" data-slider>
+          <div class="hero-track" data-track>
+            <article class="hero-slide is-active" data-slide>
+              <img class="hero-img" src="Billeder/Amazon.webp"Hero produktbillede" />
+              <div class="hero-overlay">
+                <h1>ALT FRA A TIL Z</h1>
+                <p>Vi har samlet alt, du behøver ét sted. Fra de første overvejelser til det færdige valg – enkelt, overskueligt og lige til at gå til</p>
+                <a class="btn" href="#">Udforsk mere</a>
+              </div>
+            </article>
+
+            <article class="hero-slide" data-slide>
+              <img class="hero-img" src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=2200&q=80" alt="Hero slide 2" />
+              <div class="hero-overlay">
+                <h1>NYE FAVORITTER</h1>
+                <p>P18 - Opdag udvalgte produkter og populære valg lige nu.</p>
+                <a class="btn" href="#">Se mere</a>
+              </div>
+            </article>
+
+            <article class="hero-slide" data-slide>
+              <img class="hero-img" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=2200&q=80" alt="Hero slide 3" />
+              <div class="hero-overlay">
+                <h1>ESSENTIALS</h1>
+                <p>P18 - Enkle valg, hurtigt overblik, og lækre detaljer.</p>
+                <a class="btn" href="#">Shop nu</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="hero-dots" data-dots aria-label="Skift slide">
+            <button class="dot is-active" type="button" aria-label="Slide 1" data-dot="0"></button>
+            <button class="dot" type="button" aria-label="Slide 2" data-dot="1"></button>
+            <button class="dot" type="button" aria-label="Slide 3" data-dot="2"></button>
+          </div>
         </div>
-        <div class="hero-image"></div>
       </section>
-      <section>
-        <h2></h2>
-        <div class="product-grid">
-          <article>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </article>
-          <article>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </article>
-          <article>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </article>
-          <article>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </article>
+
+      <section class="section">
+        <h2 class="section-title">TRENDER LIGE NU</h2>
+
+        <div class="grid grid--4">
+          <a class="card" href="produktoversigt.html">
+            <img src="Billeder/Gamingmus.png" alt="Trend produkt 1" />
+            <div class="card-overlay">
+              <h3>Gamermuse</h3>
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <img src="Billeder/nissehue.webp" alt="Trend produkt 2" />
+            <div class="card-overlay">
+              <h3>Nissehuer</h3>
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <img src="Billeder/støvsuger.webp" alt="Trend produkt 3" />
+            <div class="card-overlay">
+              <h3>Støvsugere</h3>
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <img src="Billeder/blender.webp" alt="Trend produkt 4" />
+            <div class="card-overlay">
+              <h3>Blendere</h3>
+            </div>
+          </a>
         </div>
       </section>
-      <section>
-        <h2></h2>
-        <div class="product-grid">
-          <article>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </article>
-          <article>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </article>
-          <article>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </article>
-          <article>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </article>
+
+      <section class="section">
+        <h2 class="section-title">DRIKKEDUNKE</h2>
+
+        <div class="grid grid--4 grid--tall">
+          <a class="card card--tall" href="#">
+            <img src="Billeder/drikkedunk.webp"Toilettaske produkt 5" />
+            <div class="card-overlay card-overlay--top">
+              <h3>Hydrering, der følger dit tempo</h3>
+              <p>Uanset om du er på farten, til træning eller på kontoret, har du altid vand lige ved hånden.</p>
+            </div>
+          </a>
+
+          <a class="card card--tall" href="#">
+            <img src="Billeder/drikkedunk2.webp" alt="Toilettaske produkt 6" />
+            <div class="card-overlay card-overlay--top">
+              <h3>Designet til hverdag, træning og eventyr</h3>
+              <p>Robust konstruktion og funktionelt design, der passer til alle situationer.</p>
+            </div>
+          </a>
+
+          <a class="card card--tall" href="#">
+            <img src="Billeder/drikkedunk3.webp" alt="Toilettaske produkt 7" />
+            <div class="card-overlay card-overlay--top">
+              <h3>Mere end en drikkedunk – en del af din rutine</h3>
+              <p>En pålidelig følgesvend, der gør det nemmere at holde sunde vaner.</p>
+            </div>
+          </a>
+
+          <a class="card card--tall" href="#">
+            <img src="Billeder/drikkesunk4.webp" alt="Toilettaske produkt 8" />
+            <div class="card-overlay card-overlay--top">
+              <h3>Hold væsken kold. Hold fokus skarpt.</h3>
+              <p>Isolerende materialer sikrer den rette temperatur – hele dagen.</p>
+            </div>
+          </a>
         </div>
       </section>
     </main>
-    <footer></footer>
-    <script src="js/login.js"></script>
+
+    <script src="js/burger.js" defer></script>
+    <script src="js/login.js" defer></script>
   </body>
 </html>
