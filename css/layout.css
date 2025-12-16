@@ -290,7 +290,7 @@ a {
     bottom: 14px;
   }
 }
-/* --- Produktside layout (til din HTML) --- */
+
 .subrow {
   max-width: 1200px;
   margin: 0 auto;
@@ -359,7 +359,6 @@ a {
   margin-top: 10px;
 }
 
-/* Sidebar */
 .sidebar {
   padding-top: 6px;
 }
@@ -421,7 +420,6 @@ a {
   text-decoration: underline;
 }
 
-/* Product area */
 .product {
   display: grid;
   grid-template-columns: 360px 1fr;
@@ -530,7 +528,6 @@ a {
   filter: brightness(0.97);
 }
 
-/* Hero image */
 .hero {
   position: relative;
 }
@@ -555,7 +552,6 @@ a {
   background: transparent;
 }
 
-/* Responsive */
 @media (max-width: 840px) {
   .subrow {
     grid-template-columns: 1fr;
@@ -571,5 +567,116 @@ a {
   }
   .imagebox {
     height: 420px;
+  }
+}
+.topstrip {
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 0;
+  opacity: 0.95;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  font-size: 12px;
+  color: #222;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+}
+
+.searchrow {
+  display: grid;
+  grid-template-columns: 1fr 34px;
+  gap: 10px;
+  padding: 0 16px 12px;
+}
+
+.search {
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  padding: 0 16px;
+  outline: none;
+}
+
+.search-go {
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--accent);
+  cursor: pointer;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: var(--gap);
+  padding: 8px 16px 40px;
+  align-items: start;
+}
+
+.content-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 10px 0 18px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+@media (max-width: 980px) {
+  .header {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "logo actions"
+      "nav nav";
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+  .header-actions {
+    grid-area: actions;
+  }
+  .nav {
+    grid-area: nav;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .product-grid {
+    grid-template-columns: 1fr;
   }
 }

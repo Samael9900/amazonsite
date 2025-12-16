@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Amazon – Gaming Mouses (Mock)</title>
+    <title>Amazon – Gaming Mouse (Mock)</title>
+    <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="topbar__left">
-        <a class="brand" href="#" aria-label="Amazon">
-<header class="header">
-      <a class="logo" href="index.html">AMAZON</a>    
-      </div>
+    <div class="topstrip">
+      <p>Der kunne være stjerner fra trustpilot her evt</p>
+    </div>
+
+    <header class="header">
+      <a class="logo" href="index.html">AMAZON</a>
 
       <nav class="topnav" aria-label="Hovedmenu">
         <a href="#" class="topnav__link">Dagens tilbud</a>
@@ -23,186 +25,129 @@
         <a href="#" class="topnav__link">Elektronik</a>
       </nav>
 
-      <div class="topbar__right">
-        <div class="topbar__mini">
-          <a href="#" class="mini-link">EAN Kunde</a>
-          <a href="#" class="mini-link">B2B-Kunde</a>
+      <div class="header-right">
+        <div class="mini-links">
+          <a href="#">EAN Kunde</a>
+          <a href="#">B2B-Kunde</a>
         </div>
 
-        <div class="actions">
-          <a class="action" href="#">Sign in</a>
-          <button class="icon-btn" aria-label="Søg">
-            <span class="icon">⌕</span>
-          </button>
-          <button class="icon-btn" aria-label="Kurv">
-            <span class="icon">🛒</span>
-          </button>
-
-          <button class="burger" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+        <div class="icons">
+          <a class="signin" href="#">Sign in</a>
+          <button class="iconbtn" aria-label="Søg">⌕</button>
+          <a class="iconbtn" href="kurv.html">🛒</a>
         </div>
       </div>
     </header>
 
-    <aside class="drawer" id="mobileMenu" aria-hidden="true">
-      <div class="drawer__header">
-        <strong>Menu</strong>
-        <button class="drawer__close" type="button" aria-label="Luk menu">✕</button>
-      </div>
+    <div class="container searchrow">
+      <label class="sr-only" for="q">Søg</label>
+      <input id="q" class="search" type="search" value="GAMERMUSE..." />
+      <button class="search-go" type="button" aria-label="Søg"></button>
+    </div>
 
-      <nav class="drawer__nav" aria-label="Mobilmenu">
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-        <hr />
-        <a href="#">Sign in</a>
-        <a href="#">EAN Kunde</a>
-        <a href="#">B2B-Kunde</a>
-      </nav>
-    </aside>
+    <main class="container main-grid">
+      <aside class="sidebar" aria-label="Filtre">
+        <p class="muted small">1-48 of over 100,000 results for <span class="accent">"gaming"</span></p>
 
-    <div class="backdrop" hidden></div>
+        <section class="filter">
+          <h2 class="filter-title">PRICE</h2>
 
-    <main class="page">
-      <div class="page__head">
-        <div class="fake-search" aria-hidden="true">
-          <span class="fake-search__bar"></span>
-          <span class="fake-search__chip"></span>
-        </div>
+          <div class="range-wrap">
+            <div class="range-line"></div>
+            <div class="range-dot" style="left: 2%"></div>
+            <div class="range-dot" style="left: 45%"></div>
+          </div>
 
-        <div class="sort">
-          <label for="sort" class="sort__label">Sort by:</label>
-          <select id="sort" class="sort__select">
-            <option>Featured</option>
-            <option>Price: Low to High</option>
-            <option>Price: High to Low</option>
-            <option>Newest</option>
-          </select>
-        </div>
-      </div>
+          <ul class="filter-list">
+            <li><a href="#">Up to $10</a></li>
+            <li><a href="#">Up to $30</a></li>
+            <li><a href="#">Up to $50</a></li>
+            <li><a href="#">Up to $70</a></li>
+            <li><a href="#">Up to $100</a></li>
+            <li><a href="#">Up to $150</a></li>
+            <li><a href="#">$150 &amp; above</a></li>
+          </ul>
+        </section>
 
-      <div class="layout">
-        <aside class="filters" aria-label="Filtre">
-          <section class="filter-block">
-            <h3>PRICE</h3>
-            <p class="price-range">$0 - $500</p>
-
-            <div class="range-ui" aria-hidden="true">
-              <span class="dot"></span>
-              <span class="track"></span>
-              <span class="dot"></span>
-            </div>
-
-            <ul class="filter-list">
-              <li><a href="#">Up to $10</a></li>
-              <li><a href="#">Up to $30</a></li>
-              <li><a href="#">Up to $50</a></li>
-              <li><a href="#">Up to $70</a></li>
-              <li><a href="#">Up to $100</a></li>
-              <li><a href="#">Up to $150</a></li>
-              <li><a href="#">$150 & above</a></li>
-            </ul>
-          </section>
-
-          <section class="filter-block">
-            <h3>BRAND</h3>
-            <ul class="checklist">
-              <li>
-                <label><input type="checkbox" /> Logitech</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> Razer</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> Corsair</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> SteelSeries</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> ZOWIE by BenQ</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> Glorious</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> ASUS</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> HyperX</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> Mad Catz</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> MSI</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> G-Wolves</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> Pulsar Gaming Gears</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> Cooler Master</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> Turtle Beach</label>
-              </li>
-            </ul>
-            <a class="more" href="#">More…</a>
-          </section>
-
-          <section class="filter-block">
-            <h3>Condition</h3>
-            <ul class="checklist">
-              <li>
-                <label><input type="checkbox" /> New</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> Renewed</label>
-              </li>
-              <li>
-                <label><input type="checkbox" /> Used</label>
-              </li>
-            </ul>
-          </section>
-        </aside>
-
-        <section class="content" aria-label="Produkter">
-          <header class="content__header">
-            <h1>GAMING MOUSES</h1>
-          </header>
-
-        <a href="popovercode.html" class="card-link">
-  <article class="card">
-    <img
-      src="Billeder/Gamingmus.png"
-      alt="Gaming mus produkt"
-    />
-  </article>
-</a>
-              <article class="card">
-                <img src="https://images.unsplash.com/photo-1624806128284-3b9d3f0d8f54?auto=format&fit=crop&w=900&q=70" alt="Gaming mus produkt" />
-              </article>
-            </div>
-
-            <article class="hero-card">
-              <img src="https://images.unsplash.com/photo-1584270354949-1f4a24b06535?auto=format&fit=crop&w=1400&q=75" alt="Stor gaming mus" />
-
-              <div class="hero-dots" aria-hidden="true">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-            </article>
+        <section class="filter">
+          <h2 class="filter-title">BRAND</h2>
+          <div class="checks">
+            <label><input type="checkbox" /> Logitech</label>
+            <label><input type="checkbox" /> Razer</label>
+            <label><input type="checkbox" /> Corsair</label>
+            <label><input type="checkbox" /> SteelSeries</label>
+            <label><input type="checkbox" /> ZOWIE by BenQ</label>
+            <label><input type="checkbox" /> Glorious</label>
+            <label><input type="checkbox" /> ASUS</label>
+            <label><input type="checkbox" /> HyperX</label>
+            <label><input type="checkbox" /> MSI</label>
+            <a class="more" href="#">More...</a>
           </div>
         </section>
-      </div>
-    </main>
 
-    <script src="burger.js" defer></script>
+        <section class="filter">
+          <h2 class="filter-title">Condition</h2>
+          <div class="checks">
+            <label><input type="checkbox" /> New</label>
+            <label><input type="checkbox" /> Renewed</label>
+            <label><input type="checkbox" /> Used</label>
+          </div>
+        </section>
+      </aside>
+
+      <section class="content">
+        <div class="content-top">
+          <h1 class="page-title">GAMING MOUSES</h1>
+
+          <div class="sort">
+            <label class="small muted" for="sort">Sort by:</label>
+            <select id="sort">
+              <option>Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-grid" aria-label="Produktoversigt">
+          <a class="product" href="#">
+            <img src="Billeder/Gamermus4.png" alt="Gaming mus 1" />
+          </a>
+          <a class="product" href="#">
+            <img src="Billeder/Gamermus5.png" alt="Gaming mus 2" />
+          </a>
+          <a class="product" href="#">
+            <img src="Billeder/Gamermus6.png" alt="Gaming mus 3" />
+          </a>
+
+          <a class="product" href="#">
+            <img src="Billeder/Gamermus7.png" alt="Gaming mus 4" />
+          </a>
+          <a class="product" href="#">
+            <img src="Billeder/Gamermus8.png" alt="Gaming mus 5" />
+          </a>
+          <a class="product" href="#">
+            <img src="Billeder/Gamermus9.png" alt="Gaming mus 6" />
+          </a>
+
+          <a class="product" href="popovercode.html">
+            <img src="Billeder/Gamingmus.png" alt="Gaming mus 7" />
+          </a>
+          <a class="product" href="#">
+            <img src="Billeder/Gamermuse11.png" alt="Gaming mus 8" />
+          </a>
+          <a class="product" href="#">
+            <img src="Billeder/Gamermuse12.png" alt="Gaming mus 9" />
+          </a>
+        </div>
+
+        <div class="dots" aria-hidden="true">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
