@@ -369,6 +369,80 @@ img {
   margin: 6px 0;
 }
 
+.grid-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.kurv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3em;
+  margin-left: 2em;
+}
+
+.error-message {
+  margin: 0.3em;
+}
+
+.addon-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.check {
+  background-color: #ffff;
+  border-color: #ffa460;
+  border-radius: 3%;
+}
+.check:hover {
+  cursor: pointer;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  display: none;
+}
+
+.add-remove {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right: 2em;
+}
+
+.page3 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8em;
+  margin-left: 8em;
+}
+
+.forms {
+  border: 1px solid grey;
+  background-color: #f1f1f1;
+  border-radius: 10%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 2em;
+  justify-content: center;
+}
+
+.forms input,
+.forms textarea,
+.forms select,
+.forms button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 @media (max-width: 980px) {
   .topbar {
     grid-template-columns: 180px 1fr 260px;
@@ -414,5 +488,16 @@ img {
 @media (max-width: 520px) {
   .products__left {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .forms,
+  .page3,
+  .add-remove,
+  .addon-product,
+  .kurv-grid,
+  .grid-1-1 {
+    display: block;
   }
 }
